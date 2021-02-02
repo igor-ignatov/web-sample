@@ -1,0 +1,126 @@
+@import "./colors.scss";
+
+html,
+body {
+  font-family: "Roboto", sans-serif !important;
+  color: $contrast !important;
+}
+
+$body-bg: $background;
+$body-color: $contrast;
+$theme-colors: (
+  "primary": $primary,
+  "danger": $red
+);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+.btn-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+  background-color: transparentize($secondary, 0);
+  border: 0;
+  color: $contrast;
+  font-size: 30px;
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  &.btn-icon-sm {
+    width: 30px !important;
+    height: 30px !important;
+
+    svg {
+      width: 22px !important;
+      height: 22px !important;
+    }
+  }
+
+  &.btn-icon-light {
+    background-color: transparentize($contrast, 0.8) !important;
+  }
+}
+
+.mtx-inpt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $primary;
+  background-color: transparentize($secondary, 0);
+  border-radius: 100px;
+  padding: 3px;
+  border: 1px solid $light;
+
+  input {
+    background: transparent;
+    border: 0;
+    flex: 1;
+    color: $contrast;
+
+    &:focus,
+    &:active {
+      outline: none;
+    }
+  }
+
+  .mtx-inpt-append {
+  }
+}
+
+.mtx-scroll-thin {
+  &::-webkit-scrollbar {
+    opacity: 0;
+    display: none;
+    width: 6px;
+    background-color: $primary;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar {
+      display: block !important;
+    }
+  }
+}
+
+.mtx-scroll-thin::-webkit-scrollbar-thumb {
+  border-radius: 30px;
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+  background-color: $secondary;
+}
+
+.mtx-scroll-thin::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  background-color: $primary;
+}
+
+.react-switch-handle {
+  &:active {
+    outline: none !important;
+  }
+}
+
+select {
+  border: 1px solid $light-2;
+  border-radius: 4px;
+  padding: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: $contrast;
+}

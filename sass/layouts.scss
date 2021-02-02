@@ -1,0 +1,35 @@
+@import "./colors.scss";
+
+.mtx-layout-header-container {
+  background-color: $contrast;
+
+  .mtx-layout-header-container-user-name {
+    color: $white;
+    font-weight: 500;
+    font-size: 14px !important;
+    margin: 0;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+
+  button {
+    transition: all 0.3s;
+    color: $white;
+    
+    &:hover {
+      opacity: 0.7;
+    }
+
+    &:focus,
+    &:active {
+      outline: none;
+      box-shadow: none !important;
+    }
+  }
+}

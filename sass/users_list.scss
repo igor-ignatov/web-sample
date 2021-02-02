@@ -1,0 +1,13 @@
+.users-list-container {
+  &-table {
+    th {
+      font-size: 12px;
+      font-weight: 700;
+    }
+    td {
+      vertical-align: middle;
+      font-size: 12px;
+      font-weight: 400;
+    }
+  }
+}

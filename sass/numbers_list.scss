@@ -1,0 +1,32 @@
+@import "./colors.scss";
+
+.numbers-list-container {
+  &-table {
+    th {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    table {
+      th {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-number-row-container {
+    width: 100%;
+    background: transparent;
+    border: 0;
+  }
+
+  &-pagination-container {
+    button {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 14px;
+      padding: 5px !important;
+    }
+  }
+}

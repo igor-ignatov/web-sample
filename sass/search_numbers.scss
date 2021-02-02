@@ -1,0 +1,75 @@
+@import "./colors.scss";
+
+.search-number-container {
+  .input-group {
+    border-radius: 8px !important;
+    padding: 0 !important;
+    box-shadow: 0 0 3px 0 transparentize(#000000, 0.9);
+    border: 1px solid $light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    select {
+      height: 50px;
+    }
+  }
+
+  .input-group-append {
+    border-left: 1px solid $light !important;
+
+    button {
+      height: 40px;
+      width: 50px;
+      padding: 0 !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: transparent;
+      border: 0;
+
+      &:focus {
+        background-color: $white !important;
+      }
+
+      svg {
+        transition: all 0.2s;
+        width: 21px;
+        height: 21px;
+      }
+    }
+  }
+
+  input {
+    &:not(.search-input-mode-client) {
+      font-size: 20px !important;
+      line-height: 20px;
+      font-weight: 700 !important;
+    }
+    letter-spacing: 1px;
+    border: 0 !important;
+    background: transparent !important;
+    color: $contrast;
+    width: 230px !important;
+
+    &:focus {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  }
+
+  .search-number-container-search-button {
+    border-radius: 5px !important;
+
+    &:hover {
+      color: $primary;
+    }
+
+    &:active,
+    &:focus {
+      color: $primary;
+      outline: none !important;
+      box-shadow: none !important;
+    }
+  }
+}
